@@ -30,4 +30,12 @@ class TaskStore {
     func get(index: Int) -> Task {
         return tasks[index]
     }
+    
+    func removeTaskAtIndex(index: Int) {
+        tasks.removeAtIndex(index)
+    }
+    
+    var count: Int {
+        return tasks.count
+    }
 }
